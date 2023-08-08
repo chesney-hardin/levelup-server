@@ -15,10 +15,20 @@ class GameView(ViewSet):
         serialized = GameSerializer(games, many=True)
         return Response(serialized.data, status=status.HTTP_200_OK)
     
+    def retrieve(self, request, pk):
+        """Handle GET requests for single game 
+
+        Returns:
+            Response -- JSON serialized game 
+        """
+        game = Game.objects.get(pk=pk)
+        serializer = GameSerializer(game)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+    
 
 class GameSerializer(serializers.ModelSerializer):
     """JSON serializer for Games"""
     class Meta:
         model = Game
-        fields = ('id', 'name', 'creator_id', 'game_type')
+        fields = ('id', 'name', 'creator', 'game_type')
 

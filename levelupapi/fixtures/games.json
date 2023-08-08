@@ -1,0 +1,29 @@
+[
+    {
+        "model": "levelupapi.game",
+        "pk": 1,
+        "fields": {
+            "creator": 1,
+            "game_type": 1,
+            "name": "Monopoly"
+        }
+    },
+    {
+        "model": "levelupapi.game",
+        "pk": 2,
+        "fields": {
+            "creator": 1,
+            "game_type": 2,
+            "name": "Dragon Ball Z"
+        }
+    },
+    {
+        "model": "levelupapi.game",
+        "pk": 3,
+        "fields": {
+            "creator": 1,
+            "game_type": 3,
+            "name": "Darkspace"
+        }
+    }
+]
