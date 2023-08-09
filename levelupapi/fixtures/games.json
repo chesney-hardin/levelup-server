@@ -5,7 +5,9 @@
         "fields": {
             "creator": 1,
             "game_type": 1,
-            "name": "Monopoly"
+            "name": "Monopoly",
+            "number_of_players": 4,
+            "skill_level": "moderate"
         }
     },
     {
@@ -14,7 +16,9 @@
         "fields": {
             "creator": 1,
             "game_type": 2,
-            "name": "Dragon Ball Z"
+            "name": "Dragon Ball Z",
+            "number_of_players": 3,
+            "skill_level": "difficult"
         }
     },
     {
@@ -23,7 +27,9 @@
         "fields": {
             "creator": 1,
             "game_type": 3,
-            "name": "Darkspace"
+            "name": "Darkspace",
+            "number_of_players": 2,
+            "skill_level": "difficult"
         }
     }
 ]
